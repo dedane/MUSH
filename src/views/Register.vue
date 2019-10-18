@@ -203,7 +203,7 @@ export default {
      },
   data(){
         return {
-            show1: false,
+            show1: true,
             password: 'Password',
             rules: {
                 required: value => !!value || 'Required.',

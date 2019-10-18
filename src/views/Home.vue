@@ -13,7 +13,7 @@
       <v-btn  rounded block color="success" large router-link to="/Register">SIGN UP</v-btn>
       </v-flex>
       <v-flex xs7 md5 justify-space-around>
-      <v-btn  rounded block color="success" large>SIGN IN</v-btn>
+      <v-btn  rounded block color="success" router-link to="/Login" large>SIGN IN</v-btn>
       </v-flex>
     </v-layout>
   </v-container>
