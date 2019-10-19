@@ -28,9 +28,17 @@
           
             <v-card flat>
               <v-text-field
-                name="name"
-                label="Name"
-                id="name"
+                name="First-name"
+                label="First_Name"
+                id="First_name"
+                outlined
+            ></v-text-field>   
+            </v-card>
+             <v-card flat>
+              <v-text-field
+                name="Last_name"
+                label="Last_Name"
+                id="Last_name"
                 outlined
             ></v-text-field>   
             </v-card>
@@ -61,7 +69,7 @@
             <v-card flat>
                <v-text-field
                 v-model="password"
-                :append-icon="show ? 'mdi-eye': 'mdi-eye-off'"
+                :append-icon="show1 ? 'mdi-eye': 'mdi-eye-off'"
                 :type="show1 ? 'text' : 'password' "
                 name="input-10-1"
                 counter
@@ -203,7 +211,7 @@ export default {
      },
   data(){
         return {
-            show1: true,
+            show1: false,
             password: 'Password',
             rules: {
                 required: value => !!value || 'Required.',
